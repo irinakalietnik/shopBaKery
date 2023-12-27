@@ -1,0 +1,46 @@
+.traditions-section {
+  &__conteiner {
+    display: flex;
+    padding-top: 48px;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+      padding-top: 0;
+    }
+  }
+  &__content {
+    max-width: 710px;
+    @media screen and (max-width: $bp-desktop) {
+      flex-grow: 1;
+    }
+  }
+  &__title {
+    margin-bottom: 42px;
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 24px;
+    }
+  }
+  &__text span {
+    font-weight: 600;
+    color: var(--test-container);
+    text-transform: uppercase; /*Великі літери*/
+  }
+  &__text2 span {
+    color: var(--test-container);
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
+  }
+  &__images {
+    display: flex;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__foto {
+    border-radius: 400px 400px 4px 4px;
+  }
+}

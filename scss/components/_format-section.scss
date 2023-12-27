@@ -1,0 +1,22 @@
+.format-section {
+  &__title {
+    margin-bottom: 80px;
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+  &__box {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__conteiner {
+    overflow: hidden;
+    padding: 20px;
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
+}

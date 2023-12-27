@@ -1,0 +1,51 @@
+*,
+::after,
+::before {
+  box-sizing: border-box; /*властивість рахувати падінг і бордер вже всередині*/
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; /*Без крапочок список*/
+}
+address {
+  font-style: normal; /* без курсиву*/
+}
+
+body {
+  background-color: var(--color-light);
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5; /*висота рядка, має бути більше за розмір шрифта*/
+  font-size: 18px;
+  color: var(--color-primay-dark);
+  font-family: "Poppins", sans-serif; /*Сімейство та тип шрифту*/
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 14px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+}
+
+.conteiner {
+  width: 100%;
+  height: 100%;
+  max-width: 1288px;
+  margin: 0 auto; /* Вирівнює посередині*/
+  padding: 0 24px; /* Верх, низ - 0, ліва, права-24*/
+}

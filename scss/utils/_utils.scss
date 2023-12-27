@@ -1,0 +1,9 @@
+.visual-hidden {
+  /*Прихований текст, але лише від читача*/
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

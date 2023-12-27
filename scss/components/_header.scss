@@ -1,0 +1,41 @@
+.header {
+  position: absolute;
+  top: 32px;
+  align-items: center;
+  width: 100%;
+  @media screen and (max-width: $bp-desktop) {
+    top: 16px;
+  }
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+  &__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__burger {
+    display: none;
+    background-color: transparent;
+    stroke: var(--color-light);
+    border: none;
+    padding: 0;
+    fill: var(--color-light);
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+    }
+  }
+}

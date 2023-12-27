@@ -1,0 +1,11 @@
+.link {
+  line-height: 1.5;
+  text-decoration: none; /* Без підкреслення*/
+  color: var(--color-light);
+  transition: color 0.3s;
+
+  &:hover {
+    font-weight: 600;
+    color: var(--test-container);
+  }
+}

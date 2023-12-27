@@ -1,0 +1,81 @@
+.footer {
+  position: relative;
+  padding: 32px 0;
+  background-image: url("../images/fon2.png");
+  background-color: var(--color-primay-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__conteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: " ";
+  }
+  &::before {
+    background-image: url(../images/decor\ bread-small.png);
+    width: 181px;
+    height: 120px;
+  }
+  &::after {
+    background-image: url(../images/decor\ bread-large.png);
+    width: 380px;
+    right: 0;
+    height: 190px;
+  }
+  &__address-link {
+    color: var(--color-light);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  &__address-link:hover {
+    color: var(--test-container);
+    text-decoration: none;
+  }
+  &__address-copyright {
+    font-size: 14px;
+  }
+  &__address-icon {
+    fill: var(--color-light);
+    stroke: rgb(205, 123, 8);
+  }
+  &__address-icon:hover {
+    fill: var(--test-container);
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+    gap: 20px;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__logo,
+  &__menu {
+    flex-basis: 50%;
+  }
+
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+}

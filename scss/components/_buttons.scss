@@ -1,0 +1,57 @@
+.button {
+  padding: 16px 32px;
+  font-weight: 600;
+  color: var(--color-light);
+  background-color: var(--test-container);
+  border: 2px solid var(--test-container);
+  border-radius: 8px;
+  &:hover {
+    color: var(--test-container);
+    background-color: transparent; /*Прозорий*/
+  }
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+  &__mobile-button {
+    display: block;
+    margin-bottom: 24px;
+    margin: 0 auto;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &--centered {
+    margin: 0 auto;
+    display: block;
+    padding-top: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+/* format-button*/
+.btn-format {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primay-dark);
+  fill: var(--color-primay-dark);
+  flex-shrink: 0;
+
+  &__left {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: var(--color-primay-dark);
+    fill: var(--color-light);
+  }
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+}

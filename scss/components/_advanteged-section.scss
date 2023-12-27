@@ -1,0 +1,37 @@
+.advanteged-section {
+  background-color: var(--test-container);
+  padding: 16px 0;
+
+  @media screen and (max-width: $bp-desktop) {
+    background-color: transparent;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: -40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      background-color: rgba(207, 207, 188, 1);
+      border-radius: 24px;
+      padding: 24px 40px;
+      justify-content: center;
+    }
+  }
+  &__item {
+    color: var(--color-light);
+    font-size: 20px;
+    font-weight: 300;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color-primay-dark--);
+    }
+  }
+}
