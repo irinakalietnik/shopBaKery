@@ -3,6 +3,12 @@
   text-decoration: none; /* Без підкреслення*/
   color: var(--color-light);
   transition: color 0.3s;
+  @media screen and (max-width: $bp-desktop) {
+    color: var(--color-primay-dark);
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 600px;
+  }
 
   &:hover {
     font-weight: 600;

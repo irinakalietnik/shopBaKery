@@ -17,4 +17,18 @@
     top: 16px;
     right: 24px;
   }
+  &__box {
+    flex-direction: column;
+    padding: 24px;
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 160px;
+  }
+  &__logo {
+    color: var(--color-primay-dark);
+    font-size: 24px;
+    font-weight: 900;
+    text-align: left;
+  }
 }
