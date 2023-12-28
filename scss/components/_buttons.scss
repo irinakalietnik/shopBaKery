@@ -51,7 +51,7 @@
     background-color: var(--color-primay-dark);
     fill: var(--color-light);
   }
-  @media screen and (max-width: $bp-tablet) {
+  @media screen and (max-width: $bp-desktop) {
     display: none;
   }
 }

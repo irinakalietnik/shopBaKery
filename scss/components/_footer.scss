@@ -35,7 +35,7 @@
     right: 0;
     height: 164px;
     @media screen and (max-width: $bp-tablet) {
-      transform: translateX(130px);
+      display: none;
     }
   }
   &__address-link {

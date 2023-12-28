@@ -20,6 +20,7 @@ body {
   font-size: 18px;
   color: var(--color-primay-dark);
   font-family: "Poppins", sans-serif; /*Сімейство та тип шрифту*/
+
   @media screen and (max-width: $bp-desktop) {
     font-size: 14px;
   }
