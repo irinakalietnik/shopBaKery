@@ -14,4 +14,9 @@
     font-weight: 600;
     color: var(--test-container);
   }
+  &--lighted {
+    @media screen and (max-width: $bp-desktop) {
+      color: var(--color-light);
+    }
+  }
 }

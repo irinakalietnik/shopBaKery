@@ -31,9 +31,9 @@
   }
   &::after {
     background-image: url(../images/decor\ bread-large.png);
-    width: 380px;
+    width: 450px;
     right: 0;
-    height: 190px;
+    height: 164px;
     @media screen and (max-width: $bp-tablet) {
       transform: translateX(130px);
     }

@@ -1,10 +1,11 @@
 .mobile-menu {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
+  padding: 48px;
   background-image: url(../images/Linked\ Path\ Group2.png),
     url(../images/mbadvn-PhotoRoom\ 2.png);
   background-position-x: right;
@@ -18,14 +19,11 @@
   &.is-open {
     transform: translateX(0);
   }
-  &.is-scroll-disabled {
-    transform: translateX(100%);
-  }
 
   &__btn-close {
     position: absolute;
     top: 16px;
-    right: 24px;
+    right: 48px;
   }
   &__box {
     flex-direction: column;
