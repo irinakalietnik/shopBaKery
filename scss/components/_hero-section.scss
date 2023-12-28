@@ -6,7 +6,7 @@
       rgba(18, 18, 17, 0.6) 58.46%,
       rgba(18, 18, 17, 0) 90.36%
     ),
-    url(../images/header\ fon.png);
+    url(../images/fon.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -17,6 +17,7 @@
   @media screen and (max-width: $bp-tablet) {
     padding-bottom: 32px;
     padding-top: 0;
+    background-position: left center;
   }
   &__title {
     text-align: center; /*  Розташування*/
