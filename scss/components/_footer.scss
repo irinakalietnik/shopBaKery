@@ -34,6 +34,9 @@
     width: 380px;
     right: 0;
     height: 190px;
+    @media screen and (max-width: $bp-tablet) {
+      transform: translateX(130px);
+    }
   }
   &__address-link {
     color: var(--color-light);
