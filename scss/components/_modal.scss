@@ -16,11 +16,8 @@
   @media screen and (max-width: $bp-tablet) {
     padding: 60px;
   }
-  &__btn {
-    background-color: transparent;
-    border: none;
-  }
-  &__modal-btn-close {
+
+  &__close {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -28,8 +25,10 @@
     stroke: var(--test-container);
     background-color: transparent;
     transition: 0.5s;
+    background-color: transparent;
+    border: none;
   }
-  &__modal-btn-close:hover {
+  &__close:hover {
     border: 1px solid var(--test-container);
     transform: scale(1.5);
   }
