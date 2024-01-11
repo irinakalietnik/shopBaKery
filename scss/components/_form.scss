@@ -41,6 +41,9 @@
 .modal-form {
   &__fild {
     margin-top: 32px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-top: 16px;
+    }
   }
   &__label {
     display: block;

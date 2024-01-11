@@ -30,9 +30,9 @@
     height: 120px;
   }
   &::after {
-    background-image: url(../images/decor\ bread-large.png);
-    width: 450px;
-    right: 0;
+    background-image: url(../images/bread-large.png);
+    width: 324px;
+    right: 32px;
     height: 164px;
     @media screen and (max-width: $bp-tablet) {
       display: none;
@@ -42,6 +42,7 @@
     color: var(--color-light);
     font-size: 16px;
     font-weight: 200;
+    margin-bottom: 16px;
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -51,8 +52,10 @@
   }
   &__address-copyright {
     font-size: 14px;
+    color: var(--color-light);
   }
   &__address-icon {
+    margin-right: 16px;
     fill: var(--color-light);
     stroke: rgb(205, 123, 8);
   }
@@ -70,6 +73,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      gap: 0;
     }
   }
   &__logo,
